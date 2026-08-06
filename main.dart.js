@@ -132397,7 +132397,7 @@ return q})
 s($,"by2","bg3",()=>{var q=A.bP(["http","https"],t.N).ej(0)
 q.F(0,B.FJ)
 return q})
-s($,"bvp","Rf",()=>{var q=B.c.aY("http://dev-api.chphome.co.uk/api"),p=B.c.gam(q)?"https://admin-api.example.com/api":q
+s($,"bvp","Rf",()=>{var q=B.c.aY("https://dev-api.chphome.co.uk/api"),p=B.c.gam(q)?"https://admin-api.example.com/api":q
 return B.c.jU(p,"/")?B.c.X(p,0,p.length-1):p})
 s($,"bx5","bfx",()=>A.bP([B.bj,B.bH,B.by,B.ez],t.yV))
 s($,"bx7","bfy",()=>A.bP([B.bj,B.bH,B.by],t.yV))
