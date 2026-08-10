@@ -1,8 +1,0 @@
-backup
-node_modules
-package-lock.json
-doc/typedoc/
-coverage/
-.vscode/
-lib/
-.DS_Store
