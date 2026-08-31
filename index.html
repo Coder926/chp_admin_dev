@@ -31,6 +31,16 @@
 
   <title>warmup_pick_admin</title>
   <link rel="manifest" href="manifest.json">
+  <script>
+    // Restore SPA route saved by 404.html (GitHub Pages SPA redirect).
+    (function() {
+      var saved = sessionStorage.getItem('redirect');
+      if (saved) {
+        sessionStorage.removeItem('redirect');
+        window.history.replaceState(null, '', saved);
+      }
+    })();
+  </script>
 </head>
 <body>
   <!--

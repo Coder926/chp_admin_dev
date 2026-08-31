@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <script>
+    // GitHub Pages SPA redirect: preserve the requested path/query so Flutter
+    // can route to it after index.html loads.
+    var pathSegmentsToKeep = 0; // 0 for custom domain / root deploy
+    var l = window.location;
+    var redirectPath = l.pathname + l.search + l.hash;
+    sessionStorage.setItem('redirect', redirectPath);
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      Array(pathSegmentsToKeep + 1).join('/') +
+      (l.search ? '?' + l.search.slice(1) : '') +
+      l.hash
+    );
+  </script>
+</head>
+<body>
+</body>
+</html>
