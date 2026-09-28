@@ -1,22 +1,11 @@
 # Dashboard Help
 
-Welcome to the Warmup Pick Admin Dashboard.
+The dashboard shows current booking status counts for a selected UK calendar day.
 
-## Overview
+- **Jobs** uses the service date. Scheduled is Booked + In Progress + Completed + Exception. Refunds are shown separately.
+- **Orders** uses the booking creation date in UK time. Confirmed is Booked + In Progress + Completed + Exception. Pending Payment, Cancelled, and Refunds complete the order total.
+- **Needs Follow-up** uses today in UK time, even when a different dashboard date is selected. It lists overdue work, pending refunds, and unresolved exceptions. When opened from a Reports period, these lists are scoped to that period’s service dates so the pending count matches the report.
 
-The dashboard provides a high-level summary of bookings, schedules, and system activity.
+Use the arrows to change the date or **Today** to return to the current UK day. Select a count or calendar table cell to open the matching booking list. Select a booking number in Needs Follow-up to open its details. Use **Revenue & refunds → Stripe** for financial figures; this dashboard contains booking counts only.
 
-## Navigation
-
-Use the left sidebar to navigate between sections:
-- **Bookings** — View and manage customer bookings
-- **Regions** — Configure service regions
-- **Services** — Define service types and configurations
-- **Appliances** — Manage appliance categories
-- **Schedules** — Set up recurring availability
-- **Calendars** — Group schedules by region
-
-## Tips
-
-- Click any navigation item to switch screens
-- The current screen title is shown in the top header
+Counts for older dates use each booking's current status, so they may change when a booking progresses or is refunded.
